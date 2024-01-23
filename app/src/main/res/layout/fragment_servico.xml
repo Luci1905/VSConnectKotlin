@@ -40,4 +40,17 @@
 
     </LinearLayout>
 
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/descricaoServico"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/titilliumweb_light"
+            android:maxLength="200"
+            android:layout_marginTop="8dp"
+
+            android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    />
+
 </LinearLayout>
