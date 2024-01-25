@@ -1,5 +1,6 @@
 package com.senai.vsconnect_kotlin
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
@@ -40,6 +41,14 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        navView.menu.findItem(R.id.nav_sair).setOnMenuItemClickListener { menu ->
+            val mainIntent = Intent(this@MainActivity,LoginActivity::class.java)
+            startActivity(mainIntent)
+            finish()
+            true
+
+        }
     }
 
 
